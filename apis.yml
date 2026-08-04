@@ -1,18 +1,69 @@
 aid: eton-solutions
 name: Eton Solutions
-description: 'Eton Solutions is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Eton Solutions, L.P. is a Morrisville, North Carolina wealth-technology
+  company that builds AtlasFive, a purpose-built ERP platform for single-family offices,
+  multi-family offices, private funds and the ultra-high-net-worth families they serve.
+  AtlasFive consolidates general ledger and partnership/fund/trust accounting, investment
+  management and performance, bill pay and transaction processing, tax workflow, CRM
+  and document management onto one data core, and aggregates positions and transactions
+  from more than 1,500 banks and custodians via direct electronic feeds, portal scrapes,
+  PDF statement extraction and partner aggregators. The EtonAI product line layers a
+  knowledge graph and generative-AI assistants over that core. Integration is delivered
+  through customer-scoped Reporting APIs and a Power BI connector rather than a public
+  developer program: Eton Solutions publishes no public developer portal, API reference,
+  OpenAPI definition, SDK or sandbox as of August 2026. The company does publish a
+  substantial compliance posture — ISO/IEC 42001 (AI management), ISO/IEC 27001, ISO/IEC
+  27701, SOC 1 Type II and SOC 2 Type II, with GDPR and CCPA alignment — and the platform
+  is hosted on Microsoft Azure. Founded out of the multi-family office Eton Advisors and
+  led by CEO Robert Mallernee with Executive Chairman Satyen Patel, with additional
+  offices in Dubai and Bengaluru.'
 url: https://raw.githubusercontent.com/api-evangelist/eton-solutions/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: no-public-api
+x-tier-reason: >-
+  Enriched 2026-08-04. AtlasFive exposes customer-gated Reporting APIs and a Power BI
+  integration, but Eton Solutions publishes no developer portal, API reference, OpenAPI,
+  SDK, sandbox or MCP/A2A surface, and no api/docs/developer subdomain resolves.
 specificationVersion: '0.20'
+image: https://www.google.com/s2/favicons?domain=eton-solutions.com&sz=128
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
-apis: []
+- Family Office
+- Wealth Management
+- Wealth Technology
+- ERP
+- Financial Software
+- Accounting
+- Artificial Intelligence
+- Private Wealth
+- Fintech
+apis:
+- name: AtlasFive Reporting API
+  description: 'Customer-scoped reporting APIs exposed by the AtlasFive platform, used
+    to build tailored reporting on top of AtlasFive data alongside the documented Power
+    BI integration. Eton Solutions advertises the capability on the AtlasFive product
+    page but publishes no public API reference, OpenAPI definition, base URL, authentication
+    guide or sandbox — access and documentation are provided to contracted clients
+    only. Recorded here as an evidenced, non-public API surface; no specification has
+    been fabricated.'
+  humanURL: https://eton-solutions.com/solutions/atlasfive/
+  x-access: customer-gated
+  x-evidence:
+    claim: '"Reporting APIs" and "Power BI Integration" listed as AtlasFive platform
+      capabilities on the vendor product page.'
+    source: https://eton-solutions.com/solutions/atlasfive/
+    checked: '2026-08-04'
+    public_documentation: none-found
+  tags:
+  - Reporting
+  - Wealth Management
+  - Family Office
+  properties:
+  - type: ProductPage
+    url: https://eton-solutions.com/solutions/atlasfive/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -20,4 +71,52 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://eton-solutions.com/
+- type: About
+  url: https://www.eton-solutions.com/about-us
+- type: Company
+  url: https://eton-solutions.com/company/
+- type: Leadership
+  url: https://eton-solutions.com/company/leadership/
+- type: Solutions
+  url: https://eton-solutions.com/solutions/
+- type: Partners
+  url: https://eton-solutions.com/clients/partners/
+- type: Support
+  url: https://eton-solutions.com/contact-us/
+- type: Blog
+  url: https://eton-solutions.com/blogs/
+- type: News
+  url: https://eton-solutions.com/company/newsroom/
+- type: Insights
+  url: https://eton-solutions.com/insight/
+- type: Careers
+  url: https://careers.eton-solutions.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/eton-solutions
+- type: TermsOfService
+  name: Acceptable Use Policy
+  url: https://www.eton-solutions.com/acceptable-use-policy
+- type: DataProcessingAgreement
+  url: https://eton-solutions.com/data-processing-agreement/
+- type: DataControllerAgreement
+  url: https://eton-solutions.com/data-control-agreement/
+- type: InformationSecurityPolicy
+  name: Information Security Policy Statement
+  url: https://eton-solutions.com/information-security-policy-statement/
+- type: Compliance
+  name: AtlasFive certifications and compliance posture
+  url: https://eton-solutions.com/solutions/atlasfive/
+- type: Conformance
+  url: conformance/eton-solutions-conformance.yml
+- type: DomainSecurity
+  url: security/eton-solutions-domain-security.yml
+- type: LLMsTxt
+  url: llms/eton-solutions-llms.txt
+- type: SecondaryMarket
   url: https://www.hiive.com/securities/eton-solutions-stock
+x-enrichment:
+  date: '2026-08-04'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

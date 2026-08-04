@@ -1,0 +1,44 @@
+generated: '2026-08-04'
+method: searched
+result: none-found
+source: public package registry searches
+summary: >-
+  No first-party Eton Solutions or AtlasFive client library, SDK or CLI exists on any public
+  package registry, and the company publishes no SDK or downloads page. This is consistent
+  with AtlasFive having no public developer program — the Reporting API is customer-gated and
+  any integration tooling is delivered under contract rather than distributed publicly. No
+  `Packages` or `SDKs` pointer is wired into apis.yml, because there is nothing to point at.
+packages: []
+registries_searched:
+- registry: npm
+  queries: [atlasfive, eton solutions, etonai]
+  hits: 0
+- registry: pypi
+  queries: [atlasfive, eton-solutions, etonai]
+  hits: 0
+- registry: nuget
+  queries: [atlasfive eton solutions]
+  hits: 0
+- registry: maven-central
+  queries: [atlasfive]
+  hits: 0
+- registry: rubygems
+  queries: [atlasfive]
+  hits: 0
+- registry: packagist
+  queries: [atlasfive]
+  hits: 0
+- registry: crates.io
+  queries: [atlasfive]
+  hits: 0
+- registry: pkg.go.dev
+  queries: [atlasfive]
+  hits: 0
+source_code:
+  github_org: https://github.com/eton-solutions
+  github_org_status: >-
+    An organization named `eton-solutions` exists on GitHub (id 58087549, created 2019-11-22)
+    but has 0 public repositories, no description, no linked website, no public members and is
+    not a verified organization. First-party ownership could not be confirmed and there is no
+    published code, so no `GitHubOrganization` pointer is wired.
+  public_repositories: 0

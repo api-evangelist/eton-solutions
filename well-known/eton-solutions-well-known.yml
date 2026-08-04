@@ -1,0 +1,85 @@
+generated: '2026-08-04'
+method: probed
+source: live HTTP probes of https://eton-solutions.com
+host: https://eton-solutions.com
+result: indeterminate
+summary: >-
+  No /.well-known/ document could be retrieved. The origin (nginx behind SiteGround
+  bot protection) answers EVERY request path with HTTP 202 and a 190-210 byte
+  text/html "sg-captcha: challenge" body that meta-refreshes to a JavaScript
+  proof-of-work at /.well-known/sgcaptcha/. A control request to a deliberately
+  nonexistent path returned the identical 202 challenge, so a 202 here carries no
+  information about whether the document exists. Nothing was found, and nothing can
+  be ruled out either; no WellKnown, SecurityTxt, AgentCard or MCP pointer is wired
+  from this probe. Re-run from a browser-equivalent client that can clear the
+  challenge before treating any of these paths as confirmed absent.
+challenge:
+  vendor: SiteGround (sg-captcha)
+  response_header: 'sg-captcha: challenge'
+  http_status: 202
+  content_type: text/html
+  redirects_to: /.well-known/sgcaptcha/
+  control_path: /definitely-not-a-real-path-abc123
+  control_status: 202
+  control_conclusion: catch-all challenge; status is not a existence signal
+documents:
+- path: /.well-known/security.txt
+  status: 202
+  result: challenge
+- path: /.well-known/openid-configuration
+  status: 202
+  result: challenge
+- path: /.well-known/oauth-authorization-server
+  status: 202
+  result: challenge
+- path: /.well-known/oauth-protected-resource
+  status: 202
+  result: challenge
+- path: /.well-known/api-catalog
+  status: 202
+  result: challenge
+- path: /.well-known/ai-plugin.json
+  status: 202
+  result: challenge
+- path: /.well-known/agent-card.json
+  status: 202
+  result: challenge
+- path: /.well-known/agent.json
+  status: 202
+  result: challenge
+- path: /.well-known/mcp.json
+  status: 202
+  result: challenge
+rejected_hosts:
+- host: etonsolutions.com
+  reason: >-
+    Different company. Serves a Delhi, India web-design and digital-marketing agency
+    also trading as "Eton Solutions" (title "Website Designing & Best Digital Marketing
+    Company in Delhi"). Returns clean 404s for all /.well-known/ paths. Not associated
+    with Eton Solutions, L.P. and must not be conflated with it.
+- host: atlasfive.com
+  reason: >-
+    GoDaddy aftermarket parking page (redirects to /lander, llms.txt states the domain
+    is listed for sale). Answers 200 with a 114-byte HTML shell for every path including
+    /.well-known/agent-card.json — a catch-all false positive. Not operated by Eton
+    Solutions.
+- host: etonai.com
+  reason: >-
+    GoDaddy aftermarket parking page, same 200-for-everything catch-all. Its llms.txt
+    is a GoDaddy for-sale notice, not an Eton Solutions document. Not operated by
+    Eton Solutions.
+nonexistent_hosts:
+- api.eton-solutions.com
+- docs.eton-solutions.com
+- developer.eton-solutions.com
+- developers.eton-solutions.com
+- app.eton-solutions.com
+- atlasfive.eton-solutions.com
+- trust.eton-solutions.com
+- security.eton-solutions.com
+- status.eton-solutions.com
+- login.eton-solutions.com
+- portal.eton-solutions.com
+nonexistent_hosts_note: >-
+  None of these resolve in DNS (NXDOMAIN). The absence of any api/docs/developer host
+  is consistent with AtlasFive having no public developer program.

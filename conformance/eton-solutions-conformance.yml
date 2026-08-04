@@ -1,0 +1,104 @@
+generated: '2026-08-04'
+method: searched
+source: https://eton-solutions.com/solutions/atlasfive/
+docs:
+- https://eton-solutions.com/solutions/atlasfive/
+- https://eton-solutions.com/information-security-policy-statement/
+- https://eton-solutions.com/the-impact-of-eton-solutions-iso-iec-420012023-certification-in-wealthtech/
+- https://eton-solutions.com/data-processing-agreement/
+- https://eton-solutions.com/data-control-agreement/
+summary: >-
+  Eton Solutions publishes a genuine, named certification and compliance posture for the
+  AtlasFive platform — an unusually complete one for a private wealth-technology vendor,
+  including ISO/IEC 42001 for AI management. It publishes no technical API conformance
+  claims at all, because it runs no public API program: there is no public OpenAPI,
+  AsyncAPI, GraphQL, MCP or A2A surface against which OAuth 2.0, OpenID Connect, RFC 9457
+  or pagination/idempotency conventions could be asserted. The two halves of this file
+  reflect that split — organizational compliance is strong and evidenced; API-standards
+  conformance is simply undetermined rather than failed.
+standards:
+- id: iso-42001
+  name: ISO/IEC 42001:2023 — Artificial Intelligence Management System
+  conforms: true
+  evidence: >-
+    Certified April 2025 following independent audit of the EtonAI Artificial Intelligence
+    Management System; published on the AtlasFive product page and in a dedicated company
+    article.
+  source: https://eton-solutions.com/the-impact-of-eton-solutions-iso-iec-420012023-certification-in-wealthtech/
+- id: iso-27001
+  name: ISO/IEC 27001 — Information Security Management
+  conforms: true
+  evidence: Listed among AtlasFive certifications on the vendor product page.
+  source: https://eton-solutions.com/solutions/atlasfive/
+- id: iso-27701
+  name: ISO/IEC 27701 — Privacy Information Management
+  conforms: true
+  evidence: Listed among AtlasFive certifications on the vendor product page.
+  source: https://eton-solutions.com/solutions/atlasfive/
+- id: soc1-type-ii
+  name: SOC 1 Type II
+  conforms: true
+  evidence: Listed among AtlasFive certifications on the vendor product page.
+  source: https://eton-solutions.com/solutions/atlasfive/
+- id: soc2-type-ii
+  name: SOC 2 Type II
+  conforms: true
+  evidence: Listed among AtlasFive certifications on the vendor product page.
+  source: https://eton-solutions.com/solutions/atlasfive/
+- id: gdpr
+  name: EU General Data Protection Regulation
+  conforms: true
+  evidence: >-
+    Compliance stated on the AtlasFive product page; backed by a published Data Processing
+    Agreement and Data Controller Agreement, both effective 2023-12-21, defining controller
+    and processor roles and personal-data-breach handling.
+  source: https://eton-solutions.com/data-processing-agreement/
+- id: ccpa
+  name: California Consumer Privacy Act
+  conforms: true
+  evidence: Compliance stated on the AtlasFive product page.
+  source: https://eton-solutions.com/solutions/atlasfive/
+- id: isms-policy-published
+  name: Published Information Security Management System policy
+  conforms: true
+  evidence: >-
+    Eton Solutions publishes an Information Security Policy Statement describing a defined
+    ISMS covering customer information, business information and infrastructure, with stated
+    integrity, availability and continual-improvement principles.
+  source: https://eton-solutions.com/information-security-policy-statement/
+- id: oauth2
+  conforms: null
+  evidence: >-
+    Undetermined. No public OpenAPI or authentication documentation is published, so no
+    securityScheme can be observed. AtlasFive is customer-gated.
+- id: oidc
+  conforms: null
+  evidence: >-
+    Undetermined. /.well-known/openid-configuration could not be retrieved — the origin
+    answers every path with a bot-protection challenge (see well-known/eton-solutions-well-known.yml).
+- id: rfc9457-problem-details
+  conforms: null
+  evidence: Undetermined. No public API contract or error reference is published.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: >-
+    No security.txt could be retrieved and no vulnerability-disclosure contact or program
+    was found. See security/eton-solutions-vulnerability-disclosure.yml.
+- id: a2a-agent-card
+  conforms: false
+  evidence: >-
+    No A2A Agent Card served. /.well-known/agent-card.json and /.well-known/agent.json both
+    return the site-wide bot challenge, not a card; no card was found on any associated host.
+- id: mcp
+  conforms: false
+  evidence: No Model Context Protocol server is published or advertised.
+- id: asyncapi
+  conforms: false
+  evidence: >-
+    No event, streaming or webhook surface is documented. AtlasFive ingests data via
+    custodian feeds and file/PDF extraction rather than publishing outbound events.
+notes: >-
+  The compliance claims above are vendor self-published statements captured verbatim from
+  Eton Solutions' own pages; no certificate, audit report or Type II attestation letter is
+  published for independent verification, and no third-party trust center was found. They
+  are recorded as published claims, not as verified attestations.
