@@ -25,6 +25,17 @@ x-tier-reason: >-
   Enriched 2026-08-04. AtlasFive exposes customer-gated Reporting APIs and a Power BI
   integration, but Eton Solutions publishes no developer portal, API reference, OpenAPI,
   SDK, sandbox or MCP/A2A surface, and no api/docs/developer subdomain resolves.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.23'
 image: https://www.google.com/s2/favicons?domain=eton-solutions.com&sz=128
 created: '2026-08-04'
