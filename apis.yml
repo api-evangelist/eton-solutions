@@ -18,6 +18,8 @@ description: 'Eton Solutions, L.P. is a Morrisville, North Carolina wealth-techn
   led by CEO Robert Mallernee with Executive Chairman Satyen Patel, with additional
   offices in Dubai and Bengaluru.'
 url: https://raw.githubusercontent.com/api-evangelist/eton-solutions/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 x-type: company
 x-source: harvest:secondary-market
 x-tier: no-public-api
