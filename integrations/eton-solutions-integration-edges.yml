@@ -10,8 +10,8 @@ edges:
   type: marketplace
   marketplace: azure-marketplace
   channel: distribution
-  relationship: platform-app
-  direction: provider-built
+  relationship: distribution-channel
+  direction: third-party
   evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Eton%20Solutions%2C%20L.P.
   listing_count: 1
   apps:
