@@ -9,11 +9,11 @@
       "method": "discovered"
     },
     {
-      "source": "https://eton-solutions.com/contact-us/",
-      "feed_url": "https://eton-solutions.com/feed/",
+      "source": "https://eton-solutions.com/blogs/feed/",
+      "feed_url": "https://eton-solutions.com/blogs/feed/",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "feed"
     },
     {
       "source": "https://eton-solutions.com/feed/",
@@ -24,5 +24,5 @@
     }
   ],
   "post_count": 10,
-  "fetched": "2026-10-10T13:15:00Z"
+  "fetched": "2026-10-17T14:53:57Z"
 }
