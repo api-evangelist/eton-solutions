@@ -64,5 +64,88 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Eton Solutions is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/eton-solutions-stock
+Eton Solutions, L.P. is a Morrisville, North Carolina wealth-technology company that builds AtlasFive, a purpose-built ERP platform for single-family offices, multi-family offices, private funds and the ultra-high-net-worth families they serve. AtlasFive consolidates general ledger and partnership/fund/trust accounting, investment management and performance, bill pay and transaction processing, tax workflow, CRM and document management onto one data core, and aggregates positions and transactions from more than 1,500 banks and custodians via direct electronic feeds, portal scrapes, PDF statement extraction and partner aggregators. The EtonAI product line layers a knowledge graph and generative-AI assistants over that core. Integration is delivered through customer-scoped Reporting APIs and a Power BI connector rather than a public developer program: Eton Solutions publishes no public developer portal, API reference, OpenAPI definition, SDK or sandbox as of August 2026. The company does publish a substantial compliance posture — ISO/IEC 42001 (AI management), ISO/IEC 27001, ISO/IEC 27701, SOC 1 Type II and SOC 2 Type II, with GDPR and CCPA alignment — and the platform is hosted on Microsoft Azure. Founded out of the multi-family office Eton Advisors and led by CEO Robert Mallernee with Executive Chairman Satyen Patel, with additional offices in Dubai and Bengaluru.
+
+**Areas:** Company · Family Office · Wealth Management · Wealth Technology · ERP · Financial Software · Accounting · Artificial Intelligence · Private Wealth · Fintech
+
+## Eton Solutions on APIs.io
+
+Everything profiled for Eton Solutions is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/eton-solutions/](https://apis.io/providers/eton-solutions/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [AtlasFive Reporting API](https://apis.io/apis/eton-solutions/atlasfive-reporting-api/) — Customer-scoped reporting APIs exposed by the AtlasFive platform, used to build tailored reporting on top of AtlasFive data alongside the documented Power…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Eton Solutions Domain Security](https://apis.io/security/eton-solutions/eton-solutions-domain-security/)
+- [Eton Solutions Vulnerability Disclosure](https://apis.io/security/eton-solutions/eton-solutions-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://eton-solutions.com/)
+- [Support](https://eton-solutions.com/contact-us/)
+- [Blog](https://eton-solutions.com/blogs/)
+- [Compliance](https://eton-solutions.com/solutions/atlasfive/)
+- [Terms of service](https://www.eton-solutions.com/acceptable-use-policy)
+
+## API Evangelist rating
+
+**Kin Score 12.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.9 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 18.4 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/eton-solutions/](https://apis.io/providers/eton-solutions/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Eton Solutions: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/eton-solutions/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
